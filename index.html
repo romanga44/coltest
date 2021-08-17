@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Navigation Menu With Smooth Scrolling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/boost.scss">
+</head>
+<body>
+<header>
+    <div id="high_banner">
+    <div class="width_limiter">
+    <a href="https://www.ecwid.ru/?utm_source=yandex-search&utm_medium=cpc&utm_campaign=brand&utm_content=3460613331_6186751247&utm_term=ecwid&yclid=4731122067455379996"><img class="log" src="images/logo.png"></a>
+    <img class="logdop" src="images/item.png" style = "padding-bottom: 15px;">
+  </div>
+    </div>
+    <nav class="menu">
+    <ul>
+    <li><a class="item" href="#">Пряжа</a></li>
+    <li><a class="item" href="#">Спицы</a></li>
+    <li><a class="item" href="#">Крючки</a></li>
+    <li><a class="item" href="#">Аксессуары</a></li>
+    <li><a class="item" href="#">Подарочные сертификаты</a></li>
+    <li><a class="item" href="#">МК и описания</a></li>
+    <li id="last_item"><a class="item"href="#">Модели</a></li>
+    </ul>
+    </nav>
+    <div class="burger-menu">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-btn" for="menu-toggle">
+        <span></span>
+      </label>
+      <ul class="menubox">
+              <li><a class="menu-item" href="#">Пряжа</a></li>
+              <li><a class="menu-item" href="#">Спицы</a></li>
+              <li><a class="menu-item" href="#">Крючки</a></li>
+              <li><a class="menu-item" href="#">Аксессуары</a></li>
+              <li><a class="menu-item" href="#">Подарочные сертификаты</a></li>
+              <li><a class="menu-item" href="#">МК и описания</a></li>
+              <li><a class="menu-item" href="#">Модели</a></li>
+      </ul>
+    </div>
+  <div id="hero-section">
+    <div class="adaptivn-slayder">
+      <div class="parag">
+      <img src="https://i.pinimg.com/originals/c4/77/53/c47753b89f842a77ba1474f4542ff141.jpg" alt="Первый слайд">
+      </div>
+    
+      <div class="parag">
+      <img src="https://www.cottoncreekfarms.com/wp-content/uploads/2019/08/Multiple-Color-Alpaca-Yarn-Skeins.jpg" alt="Второй слайд">
+      </div>
+    
+      <div class="parag">
+      <img src="https://i.pinimg.com/originals/7a/aa/da/7aaadacacc6e9473de7d561e0384d245.jpg" alt="Третий слайд">
+      </div>
+
+      <div class="parag">
+        <img src="https://s.ecrater.com/stores/353453/54e08516653a3_353453b.jpg" alt="Четвертый слайд">
+        </div>
+
+        <div class="parag">
+          <img src="https://images.ua.prom.st/1716326993_w640_h640_pryazha-dlya-vyazaniya.jpg" alt="Четвертый слайд">
+          </div>
+    
+      <a class="prev" onclick="minusSlide()">❮</a>
+      <a class="next" onclick="plusSlide()">❯</a>
+      <div class="uneizmen-akemada">
+        <span class="noguma-pomoki-kadra" onclick="currentSlide(1)"></span>  
+        <span class="noguma-pomoki-kadra" onclick="currentSlide(2)"></span>  
+        <span class="noguma-pomoki-kadra" onclick="currentSlide(3)"></span>
+        <span class="noguma-pomoki-kadra" onclick="currentSlide(2)"></span>  
+        <span class="noguma-pomoki-kadra" onclick="currentSlide(3)"></span>    
+      </div>
+    </div>
+</header>
+<div class="features">
+<img src="images/features_one.png">
+<img src="images/features_two.png">	
+<img src="images/features_three.png">
+<img src="images/features_four.png">	
+<img src="images/features_five.png">
+</div>
+<div class="intro">
+  <div class="HeaderText"><p>ДОБРО ПОЖАЛОВАТЬ В НАШ НОВЫЙ МАГАЗИН!</p></div>
+  <p>Мы садимся вязать, и вселенная вокруг начинает жить по-другому. Точнее, мы создаем <br> 
+    собственную вселенную, в которой мы отдыхаем, вдохновляемся и создаем шедевры.<br>
+   Наш магазин за то, чтобы вы занимались своим любимым делом с удовольствием. Наш <br>
+   магазин – это место, где вам предложат пряжу и инструмент исключительного качества <br>
+   для создания лучших творений, которые вы только задумали. Наш магазин – это место, <br>
+   куда вы просто можете прийти поболтать и выпить чашечку кофе за вязанием.</p><br>
+   <div class="slink"><a href="https://www.ecwid.ru/?utm_source=yandex-search&utm_medium=cpc&utm_campaign=brand&utm_content=3460613331_6186751247&utm_term=ecwid&yclid=4731122067455379996" style="color: #09ab3f">Узнать о нас больше</a>
+  </div>
+  <div class="video">
+    <video controls="controls" poster="images/logo.png">
+      <source src="video/Sewing Machine.mp4" type="video/mp4">
+    </video>
+    </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script  src="js/slider.js"></script>
+</body>
+</html>
